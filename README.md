@@ -121,3 +121,36 @@ document.head.appendChild(script);
 // Wait for it to load, then run tests
 setTimeout(() => runAllTests(), 1000);
 ```
+
+## GitHub Pages Deployment
+
+This site is configured to automatically deploy to GitHub Pages when changes are pushed to the main branch. The deployment is handled by GitHub Actions using the workflow defined in `.github/workflows/hugo.yml`.
+
+The site is configured to use the custom domain: [nicolasliu.com](https://nicolasliu.com)
+
+### DNS Configuration
+
+To configure your custom domain with GitHub Pages:
+
+1. Go to your domain registrar's DNS settings
+2. Add the following A records pointing to GitHub Pages' IP addresses:
+   ```
+   185.199.108.153
+   185.199.109.153
+   185.199.110.153
+   185.199.111.153
+   ```
+3. If you're using www subdomain, add a CNAME record:
+   ```
+   CNAME: www → nicolasliu.com
+   ```
+
+### GitHub Repository Settings
+
+1. Go to your repository settings on GitHub
+2. Navigate to "Pages" section
+3. Under "Custom domain", enter: nicolasliu.com
+4. Check "Enforce HTTPS" for secure access
+5. The Pages source should be set to "GitHub Actions"
+
+It may take up to 24 hours for DNS changes to propagate and for GitHub to issue an SSL certificate for your domain.
