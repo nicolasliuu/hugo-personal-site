@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}Nicolas Liu{{ else }}{{ .Title }} | Nicolas Liu{{ end }}</title>
-    <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/blog.css">
+    <link rel="stylesheet" href="/css/blog.css">
     {{ block "head" . }}{{ end }}
 </head>
 <body{{ if .IsHome }} class="home-body"{{ end }}>
     <header class="site-header">
         <nav class="site-nav">
-            <a href="{{ .Site.BaseURL | absURL }}" class="site-title">Nicolas Liu</a>
+            <a href="/" class="site-title">Nicolas Liu</a>
             <div class="nav-links">
-                <a href="{{ "posts/" | absURL }}" class="nav-link">Writings</a>
-                <a href="{{ "readings/" | absURL }}" class="nav-link">Readings</a>
-                <a href="{{ "tags/" | absURL }}" class="nav-link">Tags</a>
+                <a href="/posts/" class="nav-link">Writings</a>
+                <a href="/readings/" class="nav-link">Readings</a>
+                <a href="/tags/" class="nav-link">Tags</a>
             </div>
         </nav>
     </header>
