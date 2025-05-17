@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:54388/</loc>
+    <loc>http://localhost:57357/</loc>
     <lastmod>2025-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:54388/posts/</loc>
+    <loc>http://localhost:57357/posts/</loc>
     <lastmod>2025-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:54388/readings/</loc>
+    <loc>http://localhost:57357/readings/</loc>
     <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:54388/tags/</loc>
+    <loc>http://localhost:57357/tags/</loc>
   </url>
 </urlset>
