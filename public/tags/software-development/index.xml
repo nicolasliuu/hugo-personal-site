@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Software Development on Nicolas Liu</title>
+    <link>//localhost:1313/tags/software-development/</link>
+    <description>Recent content in Software Development on Nicolas Liu</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Pragmatic Programmer</title>
+      <link>//localhost:1313/readings/sample-reading/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/readings/sample-reading/</guid>
+      <description>A classic book about software development that covers everything from coding practices to career development.</description>
+      <content:encoded><![CDATA[<p>This is a sample reading entry to demonstrate how the readings section works. You can add more detailed content here if needed.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

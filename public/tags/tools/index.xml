@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tools on Nicolas Liu</title>
+    <link>//localhost:1313/tags/tools/</link>
+    <description>Recent content in Tools on Nicolas Liu</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backlinks and Graph Visualization</title>
+      <link>//localhost:1313/posts/backlinks-and-graph-visualization/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/backlinks-and-graph-visualization/</guid>
+      <description>&lt;p&gt;In my previous posts, I&amp;rsquo;ve mentioned &lt;a href=&#34;//localhost:1313/posts/hello-world&#34;&gt;my new blog setup&lt;/a&gt; and &lt;a href=&#34;//localhost:1313/posts/obsidian-inspired&#34;&gt;how it&amp;rsquo;s inspired by Obsidian&lt;/a&gt;. In this post, I want to dive deeper into graph visualization and how it helps connect ideas.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-connected-posts&#34;&gt;What Are Connected Posts?&lt;/h2&gt;
+&lt;p&gt;When posts link to each other, they create a network of ideas. This concept is one of the foundational ideas behind the original web (and was a key inspiration for Google&amp;rsquo;s PageRank algorithm).&lt;/p&gt;
+&lt;p&gt;In the context of a personal blog or note-taking system, connected posts provide several benefits:&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>In my previous posts, I&rsquo;ve mentioned <a href="/posts/hello-world">my new blog setup</a> and <a href="/posts/obsidian-inspired">how it&rsquo;s inspired by Obsidian</a>. In this post, I want to dive deeper into graph visualization and how it helps connect ideas.</p>
+<h2 id="what-are-connected-posts">What Are Connected Posts?</h2>
+<p>When posts link to each other, they create a network of ideas. This concept is one of the foundational ideas behind the original web (and was a key inspiration for Google&rsquo;s PageRank algorithm).</p>
+<p>In the context of a personal blog or note-taking system, connected posts provide several benefits:</p>
+<ol>
+<li><strong>Discover connections</strong>: See which posts relate to the current one</li>
+<li><strong>Navigate your content</strong>: Easily move between related ideas</li>
+<li><strong>Build knowledge networks</strong>: Create a web of interconnected thoughts</li>
+</ol>
+<h2 id="how-connections-work-in-this-blog">How Connections Work in This Blog</h2>
+<p>The graph visualization in the sidebar shows how posts are connected. You can see which posts link to each other and explore the relationships between different pieces of content.</p>
+<p>This happens automatically when I link between posts. The system tracks these connections and builds a map of relationships between posts.</p>
+<h2 id="graph-visualization">Graph Visualization</h2>
+<p>The graph visualization shows these connections visually. Each post is represented as a node, and links between posts are shown as edges connecting the nodes.</p>
+<p>This visualization helps you:</p>
+<ol>
+<li><strong>See the big picture</strong>: Understand how your content is interconnected</li>
+<li><strong>Identify clusters</strong>: Find groups of related posts</li>
+<li><strong>Discover gaps</strong>: See areas where you might want to create more connections</li>
+</ol>
+<h2 id="how-the-graph-is-built">How the Graph Is Built</h2>
+<p>The graph view in the sidebar is built using <a href="https://d3js.org/">D3.js</a>, a powerful JavaScript library for data visualization. Here&rsquo;s a simplified overview of how it works:</p>
+<ol>
+<li>The system extracts all links from all posts</li>
+<li>It builds a data structure representing nodes (posts) and edges (links between posts)</li>
+<li>D3.js renders this data as an interactive force-directed graph</li>
+</ol>
+<h2 id="using-the-graph">Using the Graph</h2>
+<p>You can interact with the graph in several ways:</p>
+<ul>
+<li><strong>Hover over a node</strong> to see the title of the post</li>
+<li><strong>Click on a node</strong> to navigate to that post</li>
+<li><strong>Drag nodes</strong> to rearrange the graph</li>
+<li><strong>Zoom and pan</strong> to explore larger graphs</li>
+</ul>
+<h2 id="benefits-for-writing">Benefits for Writing</h2>
+<p>This connected approach to writing has several benefits:</p>
+<ul>
+<li><strong>Encourages connections</strong>: I&rsquo;m more likely to link related ideas across posts</li>
+<li><strong>Reduces silos</strong>: Information isn&rsquo;t isolated in separate posts</li>
+<li><strong>Improves navigation</strong>: Readers can explore related content more easily</li>
+<li><strong>Builds a knowledge base</strong>: Over time, the blog becomes a network of ideas rather than just a chronological list of posts</li>
+</ul>
+<h2 id="try-it-yourself">Try It Yourself</h2>
+<p>If you&rsquo;re viewing this post on my blog, you can see the graph visualization in action in the sidebar. Try clicking on different nodes in the graph to navigate between posts and explore the connections between different pieces of content.</p>
+<p>This is just one example of how we can bring some of the powerful features of modern note-taking apps to the web!</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Obsidian-Inspired Writing</title>
+      <link>//localhost:1313/posts/obsidian-inspired-writing/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/obsidian-inspired-writing/</guid>
+      <description>&lt;p&gt;After using &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt; for my personal notes for over a year, I decided to bring some of its best features to my blog. In my &lt;a href=&#34;//localhost:1313/posts/hello-world&#34;&gt;first post&lt;/a&gt;, I mentioned that I&amp;rsquo;d be using an Obsidian-inspired setup, and here I want to elaborate on what that means.&lt;/p&gt;
+&lt;h2 id=&#34;what-i-love-about-obsidian&#34;&gt;What I Love About Obsidian&lt;/h2&gt;
+&lt;p&gt;Obsidian has several features that make it exceptional for note-taking and writing:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Markdown-based&lt;/strong&gt;: Everything is written in simple Markdown, making it portable and future-proof.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backlinks&lt;/strong&gt;: The ability to see which notes link to the current note.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Graph View&lt;/strong&gt;: A visual representation of connections between notes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy Linking&lt;/strong&gt;: Quick and intuitive way to link between notes.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;how-ive-implemented-these-features&#34;&gt;How I&amp;rsquo;ve Implemented These Features&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve brought these key features to my blog:&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>After using <a href="https://obsidian.md">Obsidian</a> for my personal notes for over a year, I decided to bring some of its best features to my blog. In my <a href="/posts/hello-world">first post</a>, I mentioned that I&rsquo;d be using an Obsidian-inspired setup, and here I want to elaborate on what that means.</p>
+<h2 id="what-i-love-about-obsidian">What I Love About Obsidian</h2>
+<p>Obsidian has several features that make it exceptional for note-taking and writing:</p>
+<ol>
+<li><strong>Markdown-based</strong>: Everything is written in simple Markdown, making it portable and future-proof.</li>
+<li><strong>Backlinks</strong>: The ability to see which notes link to the current note.</li>
+<li><strong>Graph View</strong>: A visual representation of connections between notes.</li>
+<li><strong>Easy Linking</strong>: Quick and intuitive way to link between notes.</li>
+</ol>
+<h2 id="how-ive-implemented-these-features">How I&rsquo;ve Implemented These Features</h2>
+<p>I&rsquo;ve brought these key features to my blog:</p>
+<h3 id="markdown">Markdown</h3>
+<p>All posts are written in Markdown with YAML front matter, similar to how I write in Obsidian. This makes it easy to:</p>
+<ul>
+<li>Add formatting</li>
+<li>Include images</li>
+<li>Write code blocks</li>
+<li>Structure content with headers</li>
+</ul>
+<h3 id="links-and-connections">Links and Connections</h3>
+<p>I can easily create connections between posts using standard Markdown links. For example, I can link to my post about <a href="/posts/backlinks-demo">backlinks and graph visualization</a>.</p>
+<p>When you&rsquo;re reading a post, you can explore related content through the graph visualization, which shows how posts are connected.</p>
+<h3 id="graph-visualization">Graph Visualization</h3>
+<p>The graph view shows connections between all posts. Nodes represent posts, and edges represent links between them. This gives a visual representation of how ideas connect across different posts.</p>
+<h2 id="writing-workflow">Writing Workflow</h2>
+<p>My writing workflow is simple:</p>
+<ol>
+<li>Create a new Markdown file with front matter</li>
+<li>Write content using Markdown</li>
+<li>Include links to connect to other posts</li>
+<li>Add the post to the index.json file</li>
+<li>Upload everything to the server</li>
+</ol>
+<h2 id="benefits">Benefits</h2>
+<p>This approach has several benefits:</p>
+<ul>
+<li><strong>Lightweight</strong>: The entire system is just HTML, CSS, and JavaScript. No heavy frameworks or databases.</li>
+<li><strong>Portable</strong>: All content is in Markdown files that can be easily moved or migrated.</li>
+<li><strong>Connected</strong>: Graph visualization helps connect ideas across posts.</li>
+<li><strong>Mobile-friendly</strong>: The responsive design works well on all devices.</li>
+</ul>
+<p>If you&rsquo;re interested in seeing how the graph visualization works in more detail, check out my post on <a href="/posts/backlinks-demo">backlinks and graph visualization</a>.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

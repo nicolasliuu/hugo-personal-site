@@ -1,0 +1,13 @@
+# Disable directory listing
+Options -Indexes
+
+# Allow all image files
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|svg)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Redirect all other requests to homepage
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ ../index.html [R=302,L] 

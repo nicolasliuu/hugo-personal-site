@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="container">
+    <div class="main-content">
+        <div class="visual-side">
+            <div class="photo-container">
+                <!-- Add your photo here -->
+                <!-- <img src="your-photo.jpg" alt="Nicolas Liu"> -->       
+            </div>
+        </div>
+        
+        <div class="content-side">
+            <div class="contact-info">
+                <h1>Hi, I'm Nic.</h1>
+                <p>Studying computer science and applied math at
+                <a href="https://jhu.edu", target="_blank">Johns Hopkins</a>.
+                Took some time off to do application security at 
+                <a href="https://shopify.com" target="_blank">Shopify</a> (and play way too much ping pong).  
+                I'll be at 
+                <a href="https://google.com" target="_blank">Google</a> 
+                NYC this fall to intern on the Core team.
+                </p>
+
+        
+                <p>Last summer, I was in LA working at 
+                <a href="https://cloud9.gg" target="_blank">Cloud9 Esports</a>, 
+                building internal tools and analytics to help the team improve. Got a <a href="https://liquipedia.net/valorant/Cloud9" target="_blank">Liquipedia page</a> out of it!</p>
+
+                <p>Currently doing web security research, gymming, building in public.
+                </p>
+                            
+                <p class="social-links">
+                    <a href="mailto:nliu22@jhu.edu">Email</a> • 
+                    <a href="https://github.com/nicolasliuu" target="_blank">GitHub</a> • 
+                    <a href="https://linkedin.com/in/liunicolas" target="_blank">LinkedIn</a>
+                </p>
+                
+                <p class="location-info">
+                    Last updated: {{ now.Format "January 2, 2006" }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }} 

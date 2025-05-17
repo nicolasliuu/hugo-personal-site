@@ -1,0 +1,30 @@
+{{- define "main" }}
+<div class="container">
+    <div class="content-side">
+        <header class="page-header">
+            <h1>{{ .Title }}</h1>
+            {{- if .Description }}
+            <div class="post-description">
+                {{ .Description | markdownify }}
+            </div>
+            {{- end }}
+        </header>
+
+        <ul class="tags-list">
+            {{- $type := .Type }}
+            {{- range $key, $value := .Data.Terms.Alphabetical }}
+            {{- $name := .Name }}
+            {{- $count := .Count }}
+            {{- with site.GetPage (printf "/%s/%s" $type $name) }}
+            <li>
+                <a href="{{ .Permalink }}" class="tag-item">
+                    {{ .Name }}
+                    <span class="tag-count">{{ $count }}</span>
+                </a>
+            </li>
+            {{- end }}
+            {{- end }}
+        </ul>
+    </div>
+</div>
+{{- end }} 

@@ -1,0 +1,11 @@
+{{ $src := .Get "src" }}
+{{ $width := .Get "width" | default "auto" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $caption := .Get "caption" | default "" }}
+
+<figure>
+  <img src="{{ $src }}" alt="{{ $alt }}" width="{{ $width }}" style="max-width: 100%;" />
+  {{ if $caption }}
+  <figcaption>{{ $caption }}</figcaption>
+  {{ end }}
+</figure> 

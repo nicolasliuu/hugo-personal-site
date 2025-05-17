@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}Nicolas Liu{{ else }}{{ .Title }} | Nicolas Liu{{ end }}</title>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/blog.css">
+    {{ block "head" . }}{{ end }}
+</head>
+<body{{ if .IsHome }} class="home-body"{{ end }}>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="/" class="site-title">Nicolas Liu</a>
+            <div class="nav-links">
+                <a href="/posts/" class="nav-link">Writings</a>
+                <a href="/readings/" class="nav-link">Readings</a>
+                <a href="/tags/" class="nav-link">Tags</a>
+            </div>
+        </nav>
+    </header>
+    {{ if .IsHome }}
+    <main class="home-content">
+    {{ else }}
+    <main class="blog-page">
+    {{ end }}
+        {{ block "main" . }}{{ end }}
+    </main>
+    {{ block "footer" . }}{{ end }}
+</body>
+</html> 

@@ -1,0 +1,127 @@
+/* Custom styles for backlinks and graph visualization */
+
+/* Navbar link hover effect */
+#menu li a {
+    position: relative;
+    transition: color 0.3s;
+}
+
+#menu li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+#menu li a:hover::after {
+    width: 100%;
+}
+
+/* Backlinks container */
+.backlinks-container {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #3494E6;
+    margin-bottom: 2rem;
+}
+
+.backlinks-container h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.backlinks-list {
+    margin-top: 1rem;
+}
+
+.backlink-item {
+    margin-bottom: 0.75rem;
+}
+
+.backlink-item a {
+    text-decoration: none;
+    color: #3494E6;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.backlink-item a:hover {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+/* Graph visualization */
+.graph-container {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #3494E6;
+}
+
+.graph-container h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.graph-view {
+    height: 400px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 1rem;
+    border: 1px solid #eee;
+}
+
+.graph-view svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Wiki-style links */
+.wiki-link {
+    color: #3494E6;
+    text-decoration: none;
+    border-bottom: 1px dashed #3494E6;
+}
+
+.wiki-link:hover {
+    border-bottom: 1px solid #3494E6;
+}
+
+/* Tags */
+.post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.post-tag {
+    background: #f0f0f0;
+    color: #666;
+    padding: 0.3rem 0.6rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.post-tag:hover {
+    background: #e0e0e0;
+    color: #333;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .graph-view {
+        height: 300px;
+    }
+} 

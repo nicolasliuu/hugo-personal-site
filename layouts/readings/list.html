@@ -1,0 +1,135 @@
+{{ define "main" }}
+<div class="readings-container">
+    <header class="page-header">
+        <h1>Readings & Media</h1>
+        <div class="post-description">
+            A collection of books, articles, podcasts, and other media I've consumed, along with my thoughts on them.
+        </div>
+    </header>
+    
+    <div class="readings-filters">
+        <select id="mediaTypeFilter" onchange="filterReadings()">
+            <option value="all">All Media Types</option>
+            <option value="book">Books</option>
+            <option value="article">Articles</option>
+            <option value="podcast">Podcasts</option>
+            <option value="video">Videos</option>
+        </select>
+    </div>
+
+    <div class="readings-list">
+        {{ range .Pages.ByDate.Reverse }}
+        <article class="reading-item {{ .Params.media_type }}">
+            <div class="reading-header">
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <span class="media-type">{{ .Params.media_type }}</span>
+                {{ if .Params.rating }}
+                <div class="rating">
+                    {{ range seq .Params.rating }}★{{ end }}
+                </div>
+                {{ end }}
+            </div>
+            <div class="reading-meta">
+                {{ if .Params.author }}<span class="author">by {{ .Params.author }}</span>{{ end }}
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            </div>
+            {{ if .Params.summary }}
+            <p class="summary">{{ .Params.summary }}</p>
+            {{ end }}
+            <div class="reading-tags">
+                {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+            </div>
+        </article>
+        {{ end }}
+    </div>
+</div>
+
+<style>
+.readings-filters {
+    margin-bottom: 2rem;
+}
+
+.readings-filters select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: var(--theme);
+    color: var(--primary);
+}
+
+.reading-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--entry);
+}
+
+.reading-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.reading-header h2 {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.media-type {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+.rating {
+    color: #ffd700;
+}
+
+.reading-meta {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.reading-meta .author {
+    margin-right: 1rem;
+}
+
+.summary {
+    margin-bottom: 1rem;
+}
+
+.reading-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    background: var(--tertiary);
+    border-radius: 4px;
+    color: var(--primary);
+}
+</style>
+
+<script>
+function filterReadings() {
+    const filter = document.getElementById('mediaTypeFilter').value;
+    const items = document.querySelectorAll('.reading-item');
+    
+    items.forEach(item => {
+        if (filter === 'all' || item.classList.contains(filter)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+</script>
+{{ end }} 

@@ -1,0 +1,27 @@
+{{ $video := .Get "src" }}
+{{ $class := .Get "class" | default "small-video" }}
+{{ $autoplay := .Get "autoplay" | default true }}
+{{ $controls := .Get "controls" | default true }}
+{{ $loop := .Get "loop" | default true }}
+{{ $muted := .Get "muted" | default true }}
+
+{{ $extension := path.Ext $video }}
+{{ $contentType := "" }}
+{{ if eq $extension ".mp4" }}
+  {{ $contentType = "video/mp4" }}
+{{ else if eq $extension ".webm" }}
+  {{ $contentType = "video/webm" }}
+{{ else if eq $extension ".ogg" }}
+  {{ $contentType = "video/ogg" }}
+{{ else if eq $extension ".mov" }}
+  {{ $contentType = "video/quicktime" }}
+{{ end }}
+
+<video class="{{ $class }}" 
+  {{ if $controls }}controls{{ end }} 
+  {{ if $autoplay }}autoplay{{ end }} 
+  {{ if $loop }}loop{{ end }} 
+  {{ if $muted }}muted playsinline{{ end }}>
+  <source src="{{ $video }}" type="{{ $contentType }}">
+  Your browser does not support the video tag.
+</video> 

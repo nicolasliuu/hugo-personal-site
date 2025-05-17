@@ -1,0 +1,27 @@
+{
+  "items": [
+    {{- $pages := where .Site.RegularPages "Type" "in" (slice "posts") -}}
+    {{- $len := (len $pages) -}}
+    
+    {{- range $index, $page := $pages -}}
+    {
+      "title": "{{ $page.Title }}",
+      "permalink": "{{ $page.Permalink }}",
+      "date": "{{ $page.Date.Format "2006-01-02" }}",
+      "content": {{ $page.Plain | jsonify }},
+      "excerpt": {{ $page.Summary | plainify | jsonify }},
+      
+      {{- if $page.Params.tags -}}
+      "tags": [
+        {{- $tagslen := (len $page.Params.tags) -}}
+        {{- range $tagindex, $tag := $page.Params.tags -}}
+          "{{ $tag }}"{{ if ne (add $tagindex 1) $tagslen }},{{ end }}
+        {{- end -}}
+      ]
+      {{- else -}}
+      "tags": []
+      {{- end -}}
+    }{{- if ne (add $index 1) $len -}},{{- end -}}
+    {{- end -}}
+  ]
+} 

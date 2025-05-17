@@ -1,0 +1,63 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Nicolas Liu"
+theme = "PaperMod"
+
+# Enable clean URLs
+[permalinks]
+  posts = "/posts/:slug/"
+
+[params]
+  # Site description and metadata
+  description = "Personal website and writings of Nicolas Liu"
+  author = "Nicolas Liu"
+  
+  # Enable custom elements
+  ShowBreadCrumbs = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowFullTextinRSS = true
+  ShowReadingTime = true
+  
+  # Custom assets - for our graph visualization and backlinks
+  customCSS = ["css/custom.css"]
+  customJS = ["js/d3.v7.min.js", "js/backlinks.js", "js/graph.js"]
+  
+  # Enable tags
+  [params.homeInfoParams]
+  Title = "Writings"
+  Content = "My thoughts on software, esports, and more"
+
+# Menu items
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "posts"
+    name = "Writings"
+    url = "/posts/"
+    weight = 20
+  [[menu.main]]
+    identifier = "readings"
+    name = "Readings"
+    url = "/readings/"
+    weight = 25
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+
+# Enable taxonomies
+[taxonomies]
+  tag = "tags"
+
+# Allow raw HTML in markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

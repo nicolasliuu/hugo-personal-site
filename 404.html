@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Nicolas Liu</title>
+    <script>
+        // Single Page App redirection for GitHub Pages
+        // This script checks the location and redirects to the correct page
+        (function() {
+            // Get the repository name from the path
+            var pathSegments = window.location.pathname.split('/');
+            var repoName = '';
+            
+            // If on GitHub Pages with a repository name
+            if (window.location.hostname.includes('github.io') && pathSegments.length > 1) {
+                repoName = '/' + pathSegments[1];
+            }
+            
+            var path = window.location.pathname;
+            if (repoName && path.startsWith(repoName)) {
+                // Remove the repository name from the path for processing
+                path = path.substring(repoName.length);
+            }
+            
+            // Store the current path for debugging
+            sessionStorage.setItem('redirect', window.location.pathname);
+            
+            // Handle old blog URLs and redirect them to the Hugo blog
+            if (path.match(/^\/post\/([^\/]+)\/?$/)) {
+                // Old post page format - redirect to Hugo blog
+                var postId = path.split('/').pop();
+                window.location.replace(repoName + '/posts/' + postId + '/');
+            } else if (path.match(/^\/blogs\/?$/)) {
+                // Old blogs page - redirect to Hugo blog
+                window.location.replace(repoName + '/posts/');
+            } else if (path.match(/^\/blogs\/tag\/([^\/]+)\/?$/)) {
+                // Old tag filtering - redirect to Hugo tags
+                var tag = path.split('/').pop();
+                window.location.replace(repoName + '/tags/' + tag + '/');
+            } else {
+                // Default redirect to home page
+                window.location.replace(repoName + '/');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div style="text-align: center; padding: 50px;">
+        <h1>Page Not Found</h1>
+        <p>Redirecting you to the right place...</p>
+    </div>
+</body>
+</html> 
