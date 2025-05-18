@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Thoughts on Nicolas Liu</title>
-    <link>//localhost:52939/tags/thoughts/</link>
+    <link>http://localhost:1313/tags/thoughts/</link>
     <description>Recent content in Thoughts on Nicolas Liu</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:52939/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 May 2025 14:07:37 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Feedback is Everything</title>
-      <link>//localhost:52939/posts/feedback-is-everything/</link>
+      <link>http://localhost:1313/posts/feedback-is-everything/</link>
       <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:52939/posts/feedback-is-everything/</guid>
+      <guid>http://localhost:1313/posts/feedback-is-everything/</guid>
       <description>&lt;p&gt;I have a feeling you can learn more from feedback in an hour than you can from contemplation in a day. When you work in isolation, it&amp;rsquo;s easy to get lost in your own thoughts and assumptions.&lt;/p&gt;
 &lt;p&gt;External feedback provides:&lt;/p&gt;
 &lt;ul&gt;

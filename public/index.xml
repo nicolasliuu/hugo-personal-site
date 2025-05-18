@@ -2,11 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nicolas Liu</title>
-    <link>http://localhost:57518/</link>
+    <link>https://nicolasliu.com/</link>
     <description>Recent content on Nicolas Liu</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:57518/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nicolasliu.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://nicolasliu.com/posts/hello-world/</link>
+      <pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://nicolasliu.com/posts/hello-world/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m updating my site! The old one felt too much like LinkedIn slop and was pretty disconnected to what I wanted my site to be.&lt;/p&gt;
+&lt;h3 id=&#34;some-changes&#34;&gt;Some changes&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Way more minimal!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Revamped the theme and way less stuff to scroll through.
+
+   
+   
+   
+   
+   &lt;figure&gt;
+     &lt;img src=&#34;https://nicolasliu.com/videos/old_website_animation.gif&#34; alt=&#34;Previous website&amp;#39;s loading screen&#34; width=&#34;1000px&#34; style=&#34;max-width: 100%;&#34; /&gt;
+     
+   &lt;/figure&gt; &lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Improved the copy.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;More genuine, less LinkedIn-y. Showing things for what they are. I don&amp;rsquo;t think anyone even visited the old site, but even &lt;em&gt;I&lt;/em&gt; couldn&amp;rsquo;t stand seeing my own site talking about my passions for leveraging cutting-edge technologies championing cross-functional initiatives, building at the intersection of AI, Crypto, Healthcare, Finance, B2B SaaS&amp;hellip;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>I&rsquo;m updating my site! The old one felt too much like LinkedIn slop and was pretty disconnected to what I wanted my site to be.</p>
+<h3 id="some-changes">Some changes</h3>
+<ol>
+<li>Way more minimal!</li>
+</ol>
+<p>Revamped the theme and way less stuff to scroll through.
+
+   
+   
+   
+   
+   <figure>
+     <img src="/videos/old_website_animation.gif" alt="Previous website&#39;s loading screen" width="1000px" style="max-width: 100%;" />
+     
+   </figure> </p>
+<ol start="2">
+<li>Improved the copy.</li>
+</ol>
+<p>More genuine, less LinkedIn-y. Showing things for what they are. I don&rsquo;t think anyone even visited the old site, but even <em>I</em> couldn&rsquo;t stand seeing my own site talking about my passions for leveraging cutting-edge technologies championing cross-functional initiatives, building at the intersection of AI, Crypto, Healthcare, Finance, B2B SaaS&hellip;</p>
+<ol start="3">
+<li>I have a &ldquo;writings&rdquo; page now.</li>
+</ol>
+<p>My brain has been stuck on consume mode for so long, I forgot what it&rsquo;s like to actually write something.</p>
+<h3 id="how-its-built">How it&rsquo;s built</h3>
+<p>I used <a href="https://gohugo.io/">Hugo</a>, and everything&rsquo;s written in HTML and CSS. The posts are written in markdown and I guess Hugo works its magic converting markdown to HTML.</p>
+<p>I was about to say this was deployed on <a href="https://vercel.com">Vercel</a>, and for about 3-ish hours it was. Then I decided to deploy it on <a href="https://pages.cloudflare.com/">Cloudflare Pages</a> instead. No real reason, for low traffic static sites like this one I really don&rsquo;t think it&rsquo;ll make a difference. But I used Vercel so often before, so I thought it&rsquo;d be neat to try something new. How does Cloudflare even make money?</p>
+<p>It didn&rsquo;t take too long to change it over to Cloudflare. I had to:</p>
+<ul>
+<li>Transfer my DNS to Cloudflare</li>
+<li>Delete some CNAME records</li>
+<li>Set up domain redirecting (<code>www.nicolasliu.com</code> points to <code>nicolasliu.com</code>)</li>
+<li>And get confused along the way seeing my browser and <code>curl</code> still load the old website or not work altogether, leading me to a rabbit hole on local DNS caching.</li>
+</ul>
+<h3 id="whats-next">What&rsquo;s next?</h3>
+<p>Hopefully some more writing and sharing interesting stuff I come across online. Could be technical, non-technical, career related, or just dumping what&rsquo;s on my mind.</p>
+]]></content:encoded>
+    </item>
   </channel>
 </rss>

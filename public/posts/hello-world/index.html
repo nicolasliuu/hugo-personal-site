@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52939&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World | Nicolas Liu</title>
-    <link rel="stylesheet" href="//localhost:52939/css/blog.css">
+    <link rel="stylesheet" href="/css/blog.css">
     
 </head>
 <body>
@@ -28,7 +28,7 @@
       <h1 class="post-title">Hello World</h1>
       
       <div class="post-meta">
-        <span class="post-date">April 30, 2025</span>
+        <span class="post-date">May 17, 2025</span>
         <div class="post-tags">
           <a href="/tags/meta/" class="post-tag">meta</a>
         </div>
@@ -53,11 +53,23 @@
 <ol start="2">
 <li>Improved the copy.</li>
 </ol>
-<p>More genuine, less LinkedIn-y. Showing things for what they are.</p>
+<p>More genuine, less LinkedIn-y. Showing things for what they are. I don&rsquo;t think anyone even visited the old site, but even <em>I</em> couldn&rsquo;t stand seeing my own site talking about my passions for leveraging cutting-edge technologies championing cross-functional initiatives, building at the intersection of AI, Crypto, Healthcare, Finance, B2B SaaS&hellip;</p>
 <ol start="3">
-<li>I have &ldquo;writings&rdquo; now.</li>
+<li>I have a &ldquo;writings&rdquo; page now.</li>
 </ol>
-<p>My brain has been stuck on consume mode for too long so I&rsquo;m being silly and writing random stuff.</p>
+<p>My brain has been stuck on consume mode for so long, I forgot what it&rsquo;s like to actually write something.</p>
+<h3 id="how-its-built">How it&rsquo;s built</h3>
+<p>I used <a href="https://gohugo.io/">Hugo</a>, and everything&rsquo;s written in HTML and CSS. The posts are written in markdown and I guess Hugo works its magic converting markdown to HTML.</p>
+<p>I was about to say this was deployed on <a href="https://vercel.com">Vercel</a>, and for about 3-ish hours it was. Then I decided to deploy it on <a href="https://pages.cloudflare.com/">Cloudflare Pages</a> instead. No real reason, for low traffic static sites like this one I really don&rsquo;t think it&rsquo;ll make a difference. But I used Vercel so often before, so I thought it&rsquo;d be neat to try something new. How does Cloudflare even make money?</p>
+<p>It didn&rsquo;t take too long to change it over to Cloudflare. I had to:</p>
+<ul>
+<li>Transfer my DNS to Cloudflare</li>
+<li>Delete some CNAME records</li>
+<li>Set up domain redirecting (<code>www.nicolasliu.com</code> points to <code>nicolasliu.com</code>)</li>
+<li>And get confused along the way seeing my browser and <code>curl</code> still load the old website or not work altogether, leading me to a rabbit hole on local DNS caching.</li>
+</ul>
+<h3 id="whats-next">What&rsquo;s next?</h3>
+<p>Hopefully some more writing and sharing interesting stuff I come across online. Could be technical, non-technical, career related, or just dumping what&rsquo;s on my mind.</p>
 
     </div>
 
@@ -65,10 +77,6 @@
     
     <footer class="post-footer">
       <nav class="paginav">
-        <a class="next-post" href="//localhost:52939/posts/feedback-is-everything/">
-          <span class="paginav-label">Next</span>
-          <span class="paginav-title">Feedback is Everything</span>
-        </a>
       </nav>
     </footer>
   </article>

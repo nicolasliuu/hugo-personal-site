@@ -2,6 +2,7 @@ baseURL = "https://nicolasliu.com/"
 languageCode = "en-us"
 title = "Nicolas Liu"
 theme = "PaperMod"
+enableGitInfo = true
 
 # Enable clean URLs
 [permalinks]

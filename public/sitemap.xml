@@ -2,15 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:57518/</loc>
-    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+    <loc>https://nicolasliu.com/posts/hello-world/</loc>
+    <lastmod>2025-05-17T14:07:37-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:57518/posts/</loc>
-    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+    <loc>https://nicolasliu.com/tags/meta/</loc>
+    <lastmod>2025-05-17T14:07:37-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:57518/readings/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
+    <loc>https://nicolasliu.com/posts/</loc>
+    <lastmod>2025-05-17T14:07:37-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:57518/tags/</loc>
+    <loc>https://nicolasliu.com/tags/</loc>
+    <lastmod>2025-05-17T14:07:37-04:00</lastmod>
+  </url><url>
+    <loc>https://nicolasliu.com/readings/</loc>
+    <lastmod>2025-05-17T14:07:37-04:00</lastmod>
+  </url><url>
+    <loc>https://nicolasliu.com/</loc>
+    <lastmod>2025-05-17T14:07:37-04:00</lastmod>
   </url>
 </urlset>

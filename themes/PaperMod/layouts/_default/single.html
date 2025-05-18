@@ -14,6 +14,12 @@
       </span>
       {{- end }}
     </h1>
+    <!-- Debug: Date: {{ .Date }} | Lastmod: {{ .Lastmod }} | Are they different: {{ ne .Lastmod.Unix .Date.Unix }} -->
+    {{ if not .Lastmod.IsZero }}
+      <div class="post-updated" style="margin-bottom: 0.5em; color: var(--secondary); font-size: 1em;">
+        Updated at: {{ .Lastmod.Format "January 2, 2006" }}
+      </div>
+    {{ end }}
     {{- if .Description }}
     <div class="post-description">
       {{ .Description }}

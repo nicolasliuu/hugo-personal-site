@@ -100,12 +100,12 @@ body {
 }
 
 .post-content a {
-    color: #3494E6;
+    color: #3494E6 !important;
     text-decoration: none;
 }
 
 .post-content a:hover {
-    color: #1E6091;
+    color: #1E6091 !important;
     text-decoration: underline;
 }
 
@@ -566,11 +566,6 @@ a:hover::after {
 .prev-post::after,
 .next-post::after {
     display: none;
-}
-
-/* Update post-content links to use the animation instead of default underline */
-.post-content a:hover {
-    color: #1E6091;
 }
 
 /* Update blog-page links to use the animation */
